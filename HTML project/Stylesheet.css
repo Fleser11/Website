@@ -1,0 +1,32 @@
+
+
+body{
+    background-color:rgb(220,200,200);
+    margin:0px;
+    
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+
+header {
+    background-color:#fd2f1d;
+    color:rgb(220, 200, 200);
+    position:fixed;
+    border-width:0px;
+    width:100vw;
+
+
+
+}
+
+img{
+    width:100vw;
+
+    
+    
+}
