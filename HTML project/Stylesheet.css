@@ -24,6 +24,11 @@ header {
 
 }
 
+a {
+    color: rgb(220, 200, 200);
+    
+}
+
 img{
     width:100vw;
 
