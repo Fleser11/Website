@@ -1,6 +1,8 @@
 body{
     background-color:rgb(255, 255, 255);
     margin:0px;
+    border:0px;
+    padding:0px;
     -ms-overflow-style: none;
     scrollbar-width:none;
     
@@ -8,12 +10,11 @@ body{
 
 ::-webkit-scrollbar{
     display:none;
-
 }
 
 
 header {
-    background-color:#121e63;
+    background-color:#323e81;
     color:rgb(255, 255, 255);
     position:fixed;
     border-width:0px;
@@ -22,13 +23,13 @@ header {
 }
 
 nav { 
-    background-color:rgb(34, 34, 34);
+    background-color:rgb(37, 37, 37);
     color:rgb(255, 255, 255);
     position:fixed;
     top:0px;
-    border-width:0px;
+    /* border-width:0px; */
     width:100vw;
-    border:0px;
+    /* border:0px; */
     list-style:none; 
     text-align:center;
 
@@ -38,15 +39,18 @@ nav {
 
 a {
     text-decoration:none;
-    color: rgb(255, 255, 255);
-    
+
 }
 
 nav a{
     padding:10px 15px 10px 15px;
     border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
 
+nav a:hover{
+    background-color:rgb(75, 75, 75)
+}
 nav li{
     display:inline;
     padding-left:5vw;
@@ -61,9 +65,23 @@ nav ul{
     justify-content:space-between;
 
 }
+main{
+    margin-top:60px;
+    text-align:center;
 
-a:hover{
-    background-color:rgb(75, 75, 75)
+}
+div.download{
+    box-shadow: 0px 0px 10px 2px grey;
+}
+
+
+
+
+
+iframe{
+    height:800px;
+    width:100vw;
+
 }
 
 img{
@@ -74,9 +92,10 @@ img{
 footer{
     background-color:rgb(34, 34, 34);
     color:rgb(223, 223, 223);
-    position:absolute;
     bottom:0;
     width:100vw;
+    height:50px;
     text-align: center;
+    
 
 }
