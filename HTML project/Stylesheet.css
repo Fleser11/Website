@@ -72,6 +72,9 @@ main{
 }
 div.download{
     box-shadow: 0px 0px 10px 2px grey;
+    text-align:center;
+    width:50vw;
+    margin-left:25vw;
 }
 
 
@@ -79,8 +82,16 @@ div.download{
 
 
 iframe{
-    height:800px;
-    width:100vw;
+
+    width:55vw;
+    
+    box-shadow: 0px 0px 20px 10px grey;
+    margin-left: 22.5vw;
+    margin-right:22.5vw;
+    height:max-content;
+    scrollbar-width:0;
+    height:1100px;
+    
 
 }
 
