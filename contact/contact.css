@@ -1,0 +1,48 @@
+/* 
+main{
+    justify-content:space-between;
+    
+} */
+
+#contact-left{
+    width: 50%;
+}
+
+#contact-left #contact-img{
+    border-radius: 50%;
+    width: 50%;
+    margin: 10% 25% 0 25%;
+
+}
+
+#contact-left #media{
+    /* display:flex; */
+    text-align: center;
+    align-content: center;
+}
+
+
+#contact-left #media ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    /* margin: 25%; */
+    justify-content: center;
+}
+
+#contact-left #media li{
+    padding: 0 1vw 0 1vw ;
+}
+
+
+
+#contact-left #media img{
+    width: 3vw;
+
+}
+
+#contact-right{
+
+    width: 50%;
+    margin-top: 20vh;
+}
