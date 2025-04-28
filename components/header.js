@@ -42,6 +42,11 @@ headerTemplate.innerHTML = `
     nav a:hover{
         background-color:rgb(75, 75, 75)
     }
+
+    nav a:active{
+        background-color:rgb(100, 100, 100)
+    }
+
     nav li{
         display:inline;
         padding-left:5vw;

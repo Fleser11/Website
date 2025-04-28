@@ -1,0 +1,10 @@
+
+
+/* portfolio-entry {
+    display: flex;
+    flex-direction: row;
+} */
+
+main {
+    flex-direction: column;
+}

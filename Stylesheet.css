@@ -28,12 +28,18 @@ main{
     /* text-align:center; */
     justify-content: flex-start;
     display: flex;
-    flex-direction: column;
     list-style:none;
     padding-left: 10vw;
     padding-right: 10vw;
     width: 80vw;
     flex: 1;
+}
+
+h1{
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }
 
 /* main ul{

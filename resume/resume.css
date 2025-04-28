@@ -1,28 +1,49 @@
+
 img {
-    width: 100%; /* Make the iframe take up the full width of its container */
-    max-width: 800px; /* Optional: Set a maximum width for the iframe */
-    margin: 10vh auto; /* Center the iframe vertically and horizontally */
+    width: 60%;
+    margin: 3vh auto; 
     box-shadow: 0px 0px 20px 10px grey;
-    height: auto; /* Allow the height to adjust automatically */
-    aspect-ratio: 8.5 / 11; /* Maintain the aspect ratio of the SVG (8.5x11 for a standard page) */
-    border: none; /* Remove the border */
+    height: auto; 
+    aspect-ratio: 8.5 / 11; 
+    border: none;
 }
 
-div.download{
-    box-shadow: 0px 0px 10px 2px grey;
-    text-align:center;
-    width:20vw;
-    color:white;
-    background-color:rgb(226, 226, 226);
-    border-radius:5px 5px 5px 5px;
+main{
+    flex-direction: column;
 }
 
-div a{
-    color:rgb(0, 0, 0);
-    
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
 }
 
-div.download:hover{
-    background-color:rgb(218, 218, 218);
+li{
+    background-color: var(--bar-color);
+    width: 12vw;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    /* display: flex; */
+}
+
+
+a{
+    margin: 0 2% 0 2%;
+    text-decoration: none;
+}
+
+a li{
+    text-decoration: none;
+    color: white;
+}
+
+a li:hover{
+    background-color: rgb(75, 75, 75);
+}
+
+a li:active{
+    background-color: rgb(100, 100, 100);
 }
 
