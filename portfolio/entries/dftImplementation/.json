@@ -1,0 +1,12 @@
+{
+    "title": "Website",
+    "body": "<img src='entries/dftImplementation/FourierCos.png' style = 'float:right; width: 300px; margin: 0 0 0 10px'><p>In an attempt to learn more about signal processing, I undertook the task of gaining an understanding of how the discrete fourier transform is performed. In the process of learning the math and ensuring a thorough understanding, I worked to develop code that would allow me to perform a discrete fourier transform on ambiguous data.</p><p>As part of this project I also went through and took some time to write code that would display the work that the DFT was performing for others as an instructional visual.</p>",
+    "tags": ["Signal Processing", "DFT", "Math", "Python"],
+    "links": [
+        {
+            "label": "Github",
+            "url": "https://github.com/Fleser11/DFTexampleImplementation"
+        }
+    ]
+
+}

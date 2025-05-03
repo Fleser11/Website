@@ -1,42 +1,36 @@
 {
     "entries": [
         {
-            "title": "Website",
-            "path": "entries/website",
-            "tags": ["Web Development", "HTML", "CSS", "JavaScript"]
-        },
-        {
             "title": "IGS - Innovative Global Solutions",
-            "path": "entries/igs",
-            "tags": ["Leadership", "Circuits", "C++", "Embedded Systems", "Communication", "Networking", "Research"]
+            "path": "entries/igs"
         },
         {
-            "title": "Handwriting Study",
-            "path": "entries/handwriting"
+            "title": "Formal Modeling Research",
+            "path": "entries/FMResearch"
         },
         {
-            "title": "Probablistic Game Theory of Euchre",
-            "path": "entries/euchreGameTheory"
-        },
-        {
-            "title": "DFT Implementation",
-            "path": "dftImplementation"
-        },
-        {
-            "title": "FRC - First Robotics Competition",
-            "path": "entries/frc"
+            "title": "Website",
+            "path": "entries/website"
         },
         {
             "title": "Closet-Dex",
             "path": "entries/closetdex"
         },
         {
-            "title": "Phase 1 Engineering",
-            "path": "entries/phase1engineering"
+            "title": "Probablistic Game Theory of Euchre",
+            "path": "entries/euchreGameTheory"
         },
         {
-            "title": "Formal Modeling Research",
-            "path": "entries/FMResearch"
+            "title": "Handwriting Study",
+            "path": "entries/handwriting"
+        },
+        {
+            "title": "DFT Implementation",
+            "path": "entries/dftImplementation"
+        },
+        {
+            "title": "FRC - First Robotics",
+            "path": "entries/frc"
         }
 
     ]

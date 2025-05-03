@@ -1,0 +1,20 @@
+{
+    "title": "Website",
+    "body": "<img src='entries/igs/IGSlogo.png' style='width:80px; float: left; margin: 0 10px 0 0;'><img src='entries/igs/IncubatorImg.jpeg' style='width:200px; float:right; margin 0 0 0 10px'><p>A major commitment of mine at Michigan Technological University is through the Enterprise program. In the Innovative Global Solutions (IGS) Enterprise, I have worked with a cross disciplinary team of engineers to develop a low-cost low-power infant incubator solution for usage in the developing world.</p><p>This project has given me many opportunities for growth as a professional and and individual. In my time with the incubator project I have become Technical Lead for the project overseeing four subteams and a team of ten students from four different majors. Through this role it has been my job to support cross-team collaboration, encourage discussion and development towards a unified goal and mentor younger members of the Enterprise. This has been a great experience in my time with Enterprise, and has taught me a significant amount about leadership and the engineering design process.</p><img src='entries/igs/PCBImg.png' style='width:150px; float: left; margin: 0 10px 0 0'><img src='entries/igs/AwardImg.jpeg' style='width: 180px; float: right; margin: 0 0 0 0;'><p>In my technical work on the team I have worked extensively with the controls subteam where I have worked on developing embedded C++ code on an arduino microcontroller, worked with signal processing for heart beat detection, and circuit board design for creating a full PCB.</p><p>As part of the work I've done on the controls subteam I have also worked significantly across teams, helping support a atomization humdifier device, wiring for a infant apparatus, as well as design regarding the heating compoenents for the incubator.</p>",
+    "tags": ["Web-Development", "HTML", "CSS", "JavaScript"],
+    "links": [
+        {
+            "label": "IGS Website",
+            "url": "https://igs.enterprise.mtu.edu/"
+        },
+        {
+            "label": "Enterprise Website",
+            "url": "https://www.mtu.edu/enterprise/"
+        },
+        {
+            "label": "Incubator Github",
+            "url": "https://github.com/Innovative-Global-Solutions/infant-incubator"
+        }
+    ]
+
+}

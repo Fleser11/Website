@@ -1,0 +1,21 @@
+{
+    "title": "Handwriting Study",
+    "body": "<div style='overflow: hidden'><img src='entries/handwriting/barchart.png' style='width:280px; float: right; margin: 0 0 0 10px'><p>A project that I and a couple of other individuals undertook for a statistical programming course I took was a study of the effects of using both hands for writing a script of different cases. This was a project that required statistical analysis and usage of several different statistical programming packages</p><p>The technologies used in this project included R studio as well as SAS which were both used for many of the computations, as well as creation of the graphics.</p><p>A mixed model ANOVA test was used to analyze the ways in which the participants handwriting speeds varied between the different hands as well as type-case.</p><img src='entries/handwriting/mixedmodel.png' style='width: 400px; margin: 0 10px 0 0; float: left'><p>This model found significance, however, was sevearly limited in its conclusions due to violated assumptions. However, even with these limitations it is likely that there do exist severe differences, which was to be expected.</p><p>This project was an opportunity to work with and learn several different statistical programming packages as well as work with them for data visualization and exploration.</p></div>",
+    "tags": ["R", "SAS", "Data Analysis", "Regression", "Statistics"],
+    "links": [
+        {
+            "label": "Report",
+            "url": "entries/handwriting/report.pdf"
+        },
+        {
+            "label": "R Code",
+            "url": "entries/handwriting/Handwriting.R"
+        },
+        {
+            "label": "SAS Code",
+            "url": "entries/handwriting/Handwriting.sas"
+        }
+
+    ]
+
+}

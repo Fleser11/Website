@@ -1,0 +1,16 @@
+{
+    "title": "Game Theory of Euchre",
+    "body": "<img src = 'entries/euchreGameTheory/relativeProbabilities.png' style = 'float: left; width: 200px; margin: 0 10px 0 0'><p>The study of strategic games is the study of strategic moves in decesion games to determine how players may act in order to maximize their payoffs. This is an economic model used to determine how players should interact with one another with clearly outlined rules.</p><img src='entries/euchreGameTheory/jackHand.png' style='float:right; width = 200px; height: 150px; margin: 0 0 0 10px'><img src='entries/euchreGameTheory/poorHand.png' style='float:right; width = 200px; height: 150px; margin: 0 0 0 0'><p>For this project, I undertook the task of modeling a particular part of the game of Euchre when playing \"Stick the Dealer\". The goal of the project was to determine if the dealer has an okay hand if they pick up the right bower, but a bad hand if they don't, whether or not they should do so.</p><p>To do this required analyzing both the ways in which hands can be dealt, their distributions, their effects on winning and the point return. Then doing this to find the rollback equilibrium and the ultimate decision the dealer should make.</p><p>This required statistical modelling, using some assumptions on distributions and the implications of those distributions, using these distributions, however, conditional distributions were able to be calculated and from here it was able to be determined what every players best move was.</p>",
+    "tags": ["Statistics", "Game Theory", "R", "SAS"],
+    "links": [
+        {
+            "label": "Paper",
+            "url": "entries/euchreGameTheory/GameTheoryFinalPaper.pdf"
+        },
+        {
+            "label": "R Code",
+            "url": "entries/euchreGameTheory/gameTheory.R"
+        }
+    ]
+
+}

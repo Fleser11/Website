@@ -1,0 +1,8 @@
+{
+    "title": "Website",
+    "body": "<p>At Michigan Technological University I am also involved in research. I am working in Dr. Wallace's research program working on the ability to describe statutory rules using Formal Models. In this we are looking at the ability to convey the implications of rules to stakeholders, both those who are affected by them as well as those who write them.</p><p>I have recieved the SURF and the URIP grants from Michian Technological University to support my work on the project. With this funding I have begun working on a model using the Alloy specification language. This model uses the ability for Alloy to use temporal modelling that uses time stepping to determine the ways in which systems may change over time and how rules can enforce these changes.</p><p>In other work to develop this project I am planning a front end user model that would allow users to interact with the Alloy model on the backend and create an interface, that can be used to determine the ability for stakeholders to glean information from this formal model.</p><p>The work I am performing currently will be presented at Michigan Tech's research symposium.</p>",
+    "tags": ["Human Factors", "Alloy Specification Language", "Research"],
+    "links": [
+    ]
+
+}

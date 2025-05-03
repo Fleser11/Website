@@ -1,0 +1,16 @@
+{
+    "title": "Website",
+    "body": "<img src = './entries/website/website.png' style='width: 160px; float: left;margin: 0 15px 15px 0;'><p>In an effort to expand my knowledge of web development and to understand the foundational technologies behind modern websites, I embarked on the creation of a web application from scratch. The goal was not only to deepen my technical skills but also to create something functional and professional—a portfolio website that represents my projects and growth.</p><p>This project served as a practical introduction to web development technologies: HTML, CSS, and JavaScript. Starting with no prior experience, I undertook the challenge of learning these languages and applying them effectively to create a cohesive, responsive, and visually appealing application.</p><img src = './entries/website/websiteFileTree.png' style = 'width: 160px; float: right;margin: 15px 5px 0px 5px;'><p>A key part of the project involved learning JavaScript in greater depth, particularly its ability to create dynamic and interactive webpages. I explored the power of JavaScript templates to efficiently reuse code, simplifying the process of generating consistent components like headers and portfolio entries. By utilizing the &lttemplate&gt HTML element, I was able to predefine reusable HTML structures and dynamically clone and populate these templates with JavaScript, dramatically improving the scalability of the site.</p><p>Additionally, I worked extensively on dynamically generating webpages through JavaScript. This allowed me to programmatically assemble and inject components into the DOM, making the application more modular and adaptive. This approach proved especially valuable for managing repetitive elements and enabling a seamless workflow for expanding the site in the future.</p><p>Throughout this journey, I gained a solid understanding of JavaScript's flexibility and its crucial role in creating dynamic and interactive user experiences. This project not only improved my technical abilities but also taught me the importance of structured problem-solving and scalable design in web development.</p><p>This website stands as a testament to my commitment to learning and applying new skills, showcasing my adaptability and determination to bring ideas to life.</p>",
+    "tags": ["Web-Development", "HTML", "CSS", "JavaScript"],
+    "links": [
+        {
+            "label": "Website",
+            "url": "https://pages.mtu.edu/~cfleser/Website/home/index.html"
+        },
+        {
+            "label": "Github",
+            "url": "https://github.com/Fleser11/Website"
+        }
+    ]
+
+}
