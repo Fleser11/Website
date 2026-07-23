@@ -49,16 +49,18 @@ headerTemplate.innerHTML = `
 
     nav li{
         display:inline;
-        padding-left:5vw;
-        padding-right:5vw;
-        
+        padding-left: clamp(8px, 5vw, 40px);
+        padding-right: clamp(8px, 5vw, 40px);
+
     }
-    
+
     nav ul{
         padding:0px;
         width:100vw;
         display:flex;
+        flex-wrap: wrap;
         justify-content:space-between;
+        box-sizing: border-box;
     }
 
     header-component {
