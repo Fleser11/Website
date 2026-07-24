@@ -45,15 +45,27 @@ h1 {
     text-align: left;
 }
 
-#home-img {
-    float: right;
-    width: 35%;
-    margin: 0 0 15px 25px;
+#home-text::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#home-img img {
-    width: 100%;
+#home-img {
+    display: block;
+    float: right;
+    width: 35%;
     height: auto;
+    margin: 0 0 15px 25px;
     border-radius: 2vh;
+}
+
+@media (max-width: 700px) {
+    #home-img {
+        float: none;
+        width: auto;
+        max-height: 300px;
+        margin: 0 auto 15px auto;
+    }
 }
 
