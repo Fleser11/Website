@@ -16,9 +16,9 @@ headerTemplate.innerHTML = `
 
     }
     
-    nav { 
+    nav {
         display: flex;
-        background-color: var(--bar-color);
+        background-color: var(--bar-color, #381d2a);
         color:rgb(255, 255, 255);
         top:0px;
         /* border-width:0px; */

@@ -47,11 +47,11 @@ h1{
     font-size: 32px;
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--text-color, #381d2a);
 }
 
 a {
-    color: var(--color-rust);
+    color: var(--color-rust, #ba5624);
 }
 
 @keyframes fade-in-up {
