@@ -75,10 +75,23 @@ h1,
     min-width: 0;
 }
 
+.about-intro {
+    margin: 16px 0 0 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color, #381d2a);
+}
+
+.about-timeline-lead {
+    margin: 24px 0 0 0;
+    font-size: 16px;
+    color: var(--text-muted, #6a5560);
+}
+
 .about-timeline {
     position: relative;
     list-style: none;
-    margin: 20px 0 0 0;
+    margin: 14px 0 0 0;
     padding: 0;
 }
 
