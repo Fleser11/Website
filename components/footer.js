@@ -5,7 +5,7 @@ footerTemplate.innerHTML = `
     <style>
     footer{
         display: flex;
-        background-color: var(--color-plum, #381d2a);
+        background-color: var(--footer-bg, #381d2a);
         color:rgb(223, 223, 223);
         bottom:0;
         width:100vw;
@@ -15,7 +15,7 @@ footerTemplate.innerHTML = `
     }
     </style>
 
-    <footer>
+    <footer role="contentinfo">
         <p>Product of Connor <br> </p>
     </footer>
 
@@ -28,7 +28,7 @@ class Footer extends HTMLElement{
 
     connectedCallback(){
         const shadowRoot = this.attachShadow({ mode: 'closed' });
-        shadowRoot.appendChild(footerTemplate.content);
+        shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
     }
 }
 

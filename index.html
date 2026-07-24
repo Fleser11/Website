@@ -8,13 +8,33 @@
   <meta name="description" content="Personal portfolio site for Connor Fleser, a Computer Science graduate student at Michigan Technological University, showcasing software engineering, machine learning, and research projects." />
   <meta name="google-site-verification" content="c_oN0fYdQOgX3zfJrav4MjXg7mTwmKVMsnmQQGpclFg" />
   <title>Connor Fleser | Portfolio</title>
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="canonical" href="https://pages.mtu.edu/~cfleser/Website/index.html">
+
+  <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Connor Fleser | Portfolio">
+  <meta property="og:description" content="Personal portfolio site for Connor Fleser, a Computer Science graduate student at Michigan Technological University, showcasing software engineering, machine learning, and research projects.">
+  <meta property="og:url" content="https://pages.mtu.edu/~cfleser/Website/index.html">
+  <meta property="og:image" content="https://pages.mtu.edu/~cfleser/Website/images/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Connor Fleser | Portfolio">
+  <meta name="twitter:description" content="Personal portfolio site for Connor Fleser, a Computer Science graduate student at Michigan Technological University, showcasing software engineering, machine learning, and research projects.">
+  <meta name="twitter:image" content="https://pages.mtu.edu/~cfleser/Website/images/logo.png">
+
   <link rel="stylesheet" href="styles/variables.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/skills.css">
   <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/awards.css">
   <link rel="stylesheet" href="styles/resume.css">
   <link rel="stylesheet" href="styles/contact.css">
+  <script src="components/theme.js" defer></script>
   <script src="components/header.js" type="text/javascript" defer></script>
   <script src="components/footer.js" type="text/javascript" defer></script>
   <script src="components/scrollReveal.js" defer></script>
@@ -30,7 +50,7 @@
       <p class="hero-tagline">Computer Science Student &middot; Michigan Technological University</p>
     </div>
   </section>
-  <div class="page-content">
+  <main class="page-content">
     <section id="home">
       <div id="home-text" class="reveal">
         <h2>About Me</h2>
@@ -45,27 +65,97 @@
           <p>I've been drawn to problem solving for as long as I can remember &mdash; breaking a hard problem
             down and building something real out of it is what got me into this field, and it's still what
             keeps me here.</p>
+        </div>
+      </div>
+    </section>
 
-          <p>Right now that shows up at GE HealthCare, where I'm an Edison Engineering Development Program
-            intern working on applied machine learning for medical imaging, and as President of Innovative
-            Global Solutions, a 30+ member engineering enterprise. I'm also continuing research on formal
-            methods for interpreting statutory rules, alongside earlier internship work in simulation
-            tooling and hardware prototyping at Phase 1 Engineering.</p>
+    <section id="about">
+      <div id="about-text" class="reveal">
+        <h2 class="section-title">What I'm Working On</h2>
+        <p>Right now that shows up at GE HealthCare, where I'm an Edison Engineering Development Program
+          intern working on applied machine learning for medical imaging, and as President of Innovative
+          Global Solutions, a 30+ member engineering enterprise. I'm also continuing research on formal
+          methods for interpreting statutory rules, alongside earlier internship work in simulation
+          tooling and hardware prototyping at Phase 1 Engineering.</p>
 
-          <p>Take a look through my <a href="#portfolio">portfolio</a> to see what I've been building, or
-            <a href="#contact">reach out</a> if you'd like to talk.</p>
+        <p>Take a look through my <a href="#portfolio">portfolio</a> to see what I've been building, or
+          <a href="#contact">reach out</a> if you'd like to talk.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-groups reveal">
+        <div class="skills-group">
+          <h3>Languages</h3>
+          <ul class="skill-badges">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>R</li>
+            <li>SAS</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3>Frameworks &amp; Tools</h3>
+          <ul class="skill-badges">
+            <li>PyTorch</li>
+            <li>Angular</li>
+            <li>Spring Boot</li>
+            <li>MongoDB</li>
+            <li>Alloy</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3>Domains</h3>
+          <ul class="skill-badges">
+            <li>Machine Learning &amp; NLP</li>
+            <li>Embedded Systems</li>
+            <li>PCB Design</li>
+            <li>Research</li>
+            <li>Leadership</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="portfolio">
-      <h1 class="reveal">Portfolio</h1>
+      <h2 class="section-title reveal">Portfolio</h2>
+      <div id="portfolio-featured"></div>
       <div id="portfolio-filters"></div>
       <div id="portfolio-grid"></div>
     </section>
 
+    <section id="awards">
+      <h2 class="section-title reveal">Awards, Honors &amp; Recognition</h2>
+      <ul class="awards-list reveal">
+        <li class="award-item">
+          <span class="award-title">Summa Cum Laude</span>
+          <span class="award-context">BS in Computer Science, Michigan Technological University (2026).</span>
+        </li>
+        <li class="award-item">
+          <span class="award-title">Dean's List &mdash; 7 semesters</span>
+          <span class="award-context">Sustained academic honors throughout my undergraduate coursework at Michigan Tech.</span>
+        </li>
+        <li class="award-item">
+          <span class="award-title">1st Place Innovation Award</span>
+          <span class="award-context">Spring 2025 Design Expo, awarded to the IGS infant incubator project I led as Project Lead.</span>
+        </li>
+        <li class="award-item">
+          <span class="award-title">Audience Choice Award</span>
+          <span class="award-context">2026 Undergraduate Research Symposium, for my Rules as Code research on formal models of statutory rules.</span>
+        </li>
+        <li class="award-item">
+          <span class="award-title">SURF &amp; URIP Research Grants</span>
+          <span class="award-context">Competitive Michigan Tech funding awarded to support my Rules as Code research.</span>
+        </li>
+      </ul>
+    </section>
+
     <section id="resume">
-      <h1 class="reveal">Resume</h1>
+      <h2 class="section-title reveal">Resume</h2>
       <div class="resume-actions">
         <a href="resume/FleserConnorResume.pdf" download class="resume-btn">Download</a>
         <a href="resume/FleserConnorResume.pdf" target="_blank" rel="noopener" class="resume-btn">Print</a>
@@ -85,18 +175,18 @@
       </div>
       <div id="contact-social" class="reveal">
         <h2>Social Media</h2>
-        <ul class="media">
-          <li class="media"><a href="https://www.linkedin.com/in/connor-fleser/"><img src="images/linkedin.svg" alt="Linkedin" class="media"></a></li>
-          <li class="media"><a href="https://github.com/Fleser11"><img src="images/github.svg" alt="Github" class="media"></a></li>
+        <ul class="media" aria-label="Social media links">
+          <li class="media"><a href="https://www.linkedin.com/in/connor-fleser/"><img src="images/linkedin.svg" alt="Connor Fleser on LinkedIn" class="media"></a></li>
+          <li class="media"><a href="https://github.com/Fleser11"><img src="images/github.svg" alt="Connor Fleser on GitHub" class="media"></a></li>
         </ul>
       </div>
     </section>
-  </div>
+  </main>
   <footer-component></footer-component>
 
   <div id="portfolio-modal" class="portfolio-modal" hidden>
     <div class="portfolio-modal-backdrop"></div>
-    <div class="portfolio-modal-panel">
+    <div class="portfolio-modal-panel" role="dialog" aria-modal="true" aria-label="Project details">
       <button class="portfolio-modal-close" aria-label="Close">&times;</button>
       <div class="portfolio-modal-content"></div>
     </div>

@@ -2,40 +2,21 @@
 
 A running list of planned improvements. Roughly ordered by priority within each section.
 
-## 1. Dark / Light Mode
-- Add a dark/light theme toggle (leverage existing styles/variables.css).
-- Move hardcoded colors (e.g. tag/link backgrounds in portfolioEntry.js) into CSS custom properties.
-- Persist user choice (localStorage) and respect prefers-color-scheme on first visit.
+## Completed (portfolio-improvements branch)
 
-## 2. About / Skills Section
-- Split the home page: keep a short introduction/hero, and break the rest of the
-  bio into a dedicated "About" section.
-- Add a distinct Skills block (languages, tools, frameworks) — grouped badges
-  rather than prose so it can be scanned quickly.
+- [x] Dark/light theme toggle, persisted via localStorage, respects prefers-color-scheme.
+- [x] About/Skills split — short intro + "What I'm Working On" + grouped Skills badges.
+- [x] Featured projects row (IGS, Rules as Code Research, GE HealthCare).
+- [x] Portfolio card hover/focus reveal — blurb + tags + "Learn more" cue.
+- [x] Awards, Honors & Recognition section.
+- [x] Favicon set + Open Graph / Twitter Card meta tags.
+- [x] Alt text on all images, modal a11y (role=dialog, focus trap, focus restore), heading order
+      normalized to a single page h1 + h2 sections, focus-visible states, contrast check.
+- [x] Typo/proofread sweep (no outstanding issues found).
 
-## 3. Pinned / Featured Projects
-- Pick 2-3 strongest projects (e.g. IGS Incubator, Formal Modeling Research) and
-  give them prominence above the full portfolio list.
-- Consider a "featured" flag in entries.json / entry .json files to drive this.
+## Ideas for next round
 
-## 4. Recognition / Awards Section
-- Add a dedicated section to highlight awards and recognition (we have a couple
-  worth calling out — e.g. the IGS award).
-- Include short context for each: what it was, when, and why it mattered.
-
-## 5. Favicon Polish & Open Graph Meta Tags
-- Clean up / add a proper favicon set (already referencing images/logo.png).
-- Add Open Graph + Twitter Card meta tags to each page so shared links unfurl
-  nicely on LinkedIn / social (title, description, image, url).
-
-## 6. Alt Tags & Accessibility
-- Add descriptive alt text to all images (several <img> currently lack it —
-  home, contact, portfolio entry bodies).
-- Add keyboard focus states, semantic landmarks, and check color contrast.
-- Verify heading order and fix the unclosed <ul> in contact/contact.html.
-
-## 7. Portfolio Narrative Cleanup
-- Clean up the narrative structure of portfolio entries for consistency.
-- Apply a consistent problem -> approach -> result structure across entries.
-- Proofread/copyedit (a few typos exist, e.g. "Probablistic", "humdifier",
-  "compoenents").
+- Consider a lightweight animation/easing pass on the theme toggle icon itself.
+- Revisit Skills grouping/wording and Awards copy once reviewed.
+- Confirm the Open Graph canonical URL/domain matches the actual deployed site if it changes.
+- Consider adding structured data (JSON-LD Person schema) for richer search results.

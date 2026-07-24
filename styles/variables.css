@@ -1,18 +1,87 @@
 :root {
-    /* Brand palette */
+    /* Brand palette (constant across themes) */
     --color-cream: #fcde9c;
     --color-orange: #ffa552;
     --color-rust: #ba5624;
     --color-plum: #381d2a;
     --color-sage: #c4d6b0;
 
-    /* Semantic roles */
-    --color-dark: var(--color-plum);
+    /* ---- Light theme (default) ---- */
+    --bg-page: #ffffff;
+    --bg-surface: #fbf6ee;      /* cards, skill badges */
+    --bg-elevated: #ffffff;     /* modal panel */
+    --text-color: var(--color-plum);
+    --text-muted: #6a5560;
+    --text-on-dark: #ffffff;    /* text over plum bars/hero */
+    --border-color: #e7ddcf;
     --color-primary: var(--color-rust);
     --color-primary-hover: var(--color-orange);
     --color-accent-light: var(--color-cream);
     --color-accent-soft: var(--color-sage);
-    --text-color: var(--color-plum);
 
+    /* Chrome that stays dark in both themes */
+    --nav-bg: var(--color-plum);
+    --footer-bg: var(--color-plum);
+
+    --hero-overlay-top: rgba(56, 29, 42, 0.55);
+    --hero-overlay-bottom: rgba(56, 29, 42, 0.70);
+    --shadow-card: 0 2px 10px rgba(56, 29, 42, 0.10);
+    --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.35);
+    --backdrop: rgba(56, 29, 42, 0.55);
+
+    /* Legacy alias kept for existing rules */
+    --color-dark: var(--color-plum);
     --bar-color: var(--color-plum);
+
+    color-scheme: light;
+}
+
+/* ---- Dark theme values ---- */
+:root[data-theme="dark"] {
+    --bg-page: #1f1017;
+    --bg-surface: #2c1a24;
+    --bg-elevated: #33202b;
+    --text-color: #f3e7d7;
+    --text-muted: #c3a9b3;
+    --text-on-dark: #ffffff;
+    --border-color: #452a37;
+    --color-primary: var(--color-orange);
+    --color-primary-hover: var(--color-cream);
+
+    --nav-bg: #160b10;
+    --footer-bg: #160b10;
+
+    --hero-overlay-top: rgba(20, 8, 14, 0.55);
+    --hero-overlay-bottom: rgba(20, 8, 14, 0.78);
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.45);
+    --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.65);
+    --backdrop: rgba(10, 4, 7, 0.66);
+
+    color-scheme: dark;
+}
+
+/* Follow the OS preference when the user hasn't explicitly chosen light */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-page: #1f1017;
+        --bg-surface: #2c1a24;
+        --bg-elevated: #33202b;
+        --text-color: #f3e7d7;
+        --text-muted: #c3a9b3;
+        --text-on-dark: #ffffff;
+        --border-color: #452a37;
+        --color-primary: var(--color-orange);
+        --color-primary-hover: var(--color-cream);
+
+        --nav-bg: #160b10;
+        --footer-bg: #160b10;
+
+        --hero-overlay-top: rgba(20, 8, 14, 0.55);
+        --hero-overlay-bottom: rgba(20, 8, 14, 0.78);
+        --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.45);
+        --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.65);
+        --backdrop: rgba(10, 4, 7, 0.66);
+
+        color-scheme: dark;
+    }
 }

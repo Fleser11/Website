@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
     background-image:
-        linear-gradient(rgba(56, 29, 42, 0.55), rgba(56, 29, 42, 0.70)),
+        linear-gradient(var(--hero-overlay-top, rgba(56, 29, 42, 0.55)), var(--hero-overlay-bottom, rgba(56, 29, 42, 0.70))),
         url("../images/aurora-banner.jpeg");
     background-size: cover;
     background-position: center;
@@ -37,7 +37,8 @@
     display: block;
 }
 
-h1 {
+h1,
+.section-title {
     margin: 4% 0 0 0;
 }
 
@@ -67,5 +68,15 @@ h1 {
         max-height: 300px;
         margin: 0 auto 15px auto;
     }
+}
+
+#about {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#about-text {
+    text-align: left;
 }
 

@@ -1,0 +1,43 @@
+#skills {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.skills-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skills-group {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.skills-group h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted, #6a5560);
+}
+
+.skill-badges {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-badges li {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: var(--bg-surface, #fbf6ee);
+    border: 1px solid var(--border-color, #e7ddcf);
+    color: var(--text-color, #381d2a);
+    font-size: 14px;
+}
