@@ -27,19 +27,19 @@
     padding: 6px 16px;
     border-radius: 20px;
     border: none;
-    background-color: var(--color-plum, #381d2a);
-    color: white;
+    background-color: var(--nav-bg, #381d2a);
+    color: var(--text-on-dark, white);
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .filter-chip:hover {
-    background-color: var(--color-rust, #ba5624);
+    background-color: var(--color-primary, #ba5624);
     transform: translateY(-1px);
 }
 
 .filter-chip.active {
-    background-color: var(--color-rust, #ba5624);
+    background-color: var(--color-primary, #ba5624);
 }
 
 .filter-chip.removable {
@@ -56,10 +56,41 @@
     font: inherit;
     padding: 6px 14px;
     border-radius: 20px;
-    border: 1px solid var(--color-plum, #381d2a);
-    background-color: white;
-    color: var(--color-plum, #381d2a);
+    border: 1px solid var(--border-color, #381d2a);
+    background-color: var(--bg-surface, white);
+    color: var(--text-color, #381d2a);
     cursor: pointer;
+}
+
+.portfolio-featured-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted, #6a5560);
+    margin: 0 0 12px 0;
+}
+
+.portfolio-featured-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 900px) {
+    .portfolio-featured-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-featured-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.portfolio-card-featured {
+    aspect-ratio: 4 / 3;
 }
 
 #portfolio-grid {
@@ -89,7 +120,7 @@
     background: none;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-card, 0px 0px 12px 2px rgba(0, 0, 0, 0.15));
     cursor: pointer;
     overflow: hidden;
     padding: 0;
@@ -118,6 +149,76 @@
     background-image: linear-gradient(135deg, var(--color-rust, #ba5624) 0%, var(--color-plum, #381d2a) 100%);
 }
 
+.portfolio-card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.94);
+    color: var(--color-plum, #381d2a);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+:root[data-theme="dark"] .portfolio-card-overlay {
+    background-color: rgba(51, 32, 43, 0.94);
+    color: var(--text-color, #f3e7d7);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .portfolio-card-overlay {
+        background-color: rgba(51, 32, 43, 0.94);
+        color: var(--text-color, #f3e7d7);
+    }
+}
+
+.portfolio-card:hover .portfolio-card-overlay,
+.portfolio-card:focus-visible .portfolio-card-overlay,
+.portfolio-card:focus-within .portfolio-card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-card-overlay-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.portfolio-card-overlay-blurb {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.portfolio-card-overlay-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+.portfolio-card-overlay-tags li {
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: var(--nav-bg, #381d2a);
+    color: var(--text-on-dark, white);
+}
+
+.portfolio-card-overlay-cta {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-primary, #ba5624);
+}
+
 .portfolio-card-title {
     position: absolute;
     left: 0;
@@ -126,7 +227,7 @@
     padding: 30px 16px 14px 16px;
     font-weight: bold;
     font-size: 18px;
-    color: white;
+    color: var(--text-on-dark, white);
     background: linear-gradient(to top, rgba(56, 29, 42, 0.9) 0%, rgba(56, 29, 42, 0) 100%);
 }
 
@@ -152,20 +253,21 @@
 .portfolio-modal-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--backdrop, rgba(0, 0, 0, 0.6));
 }
 
 .portfolio-modal-panel {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--bg-elevated, white);
+    color: var(--text-color, #381d2a);
     max-width: 700px;
     width: 90vw;
     max-height: 85vh;
     border-radius: 10px;
     padding: 40px 4% 3% 4%;
-    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-modal, 0px 0px 30px 5px rgba(0, 0, 0, 0.4));
     box-sizing: border-box;
     transform: scale(0.96);
     transition: transform 0.2s ease;
@@ -185,12 +287,12 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--color-plum, #381d2a);
+    color: var(--text-color, #381d2a);
     transition: color 0.15s ease;
 }
 
 .portfolio-modal-close:hover {
-    color: var(--color-rust, #ba5624);
+    color: var(--color-primary, #ba5624);
 }
 
 .portfolio-modal-content {
@@ -221,19 +323,19 @@ body.modal-open {
     padding: 2px 10px;
     margin: 2px 5px 2px 0;
     border-radius: 20px;
-    background-color: var(--color-plum, #381d2a);
-    color: white;
+    background-color: var(--nav-bg, #381d2a);
+    color: var(--text-on-dark, white);
 }
 
 .link-list li {
-    background-color: var(--color-rust, #ba5624);
+    background-color: var(--color-primary, #ba5624);
 }
 
 .link-list a {
     text-decoration: none;
-    color: white;
+    color: var(--text-on-dark, white);
 }
 
 .no-links {
-    color: rgb(100, 100, 100);
+    color: var(--text-muted, rgb(100, 100, 100));
 }
