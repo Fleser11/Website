@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Connor Fleser" />
+  <meta name="description" content="Personal portfolio site for Connor Fleser, a Computer Science graduate student at Michigan Technological University, showcasing software engineering, machine learning, and research projects." />
+  <meta name="google-site-verification" content="c_oN0fYdQOgX3zfJrav4MjXg7mTwmKVMsnmQQGpclFg" />
+  <title>Connor Fleser | Portfolio</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/resume.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="components/header.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
+  <script src="components/scrollReveal.js" defer></script>
+  <script src="portfolio/portfolioJS.js" defer></script>
+</head>
+
+<body>
+  <header-component></header-component>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Connor Fleser</h1>
+      <p class="hero-tagline">Computer Science Student &middot; Michigan Technological University</p>
+    </div>
+  </section>
+  <div class="page-content">
+    <section id="home">
+      <div id="home-text" class="reveal">
+        <h2>About Me</h2>
+
+        <div id="home-img">
+          <img src="images/portrait.jpeg" alt="Portrait of Connor Fleser">
+        </div>
+
+        <p>I'm a Computer Science graduate student at Michigan Technological University, finishing an
+          accelerated Bachelor's and Master's degree through the 4+1 program after completing my BS in
+          April 2026.</p>
+
+        <p>I've been drawn to problem solving for as long as I can remember &mdash; breaking a hard problem
+          down and building something real out of it is what got me into this field, and it's still what
+          keeps me here.</p>
+
+        <p>Right now that shows up at GE HealthCare, where I'm an Edison Engineering Development Program
+          intern working on applied machine learning for medical imaging, and as President of Innovative
+          Global Solutions, a 30+ member engineering enterprise. I'm also continuing research on formal
+          methods for interpreting statutory rules, alongside earlier internship work in simulation
+          tooling and hardware prototyping at Phase 1 Engineering.</p>
+
+        <p>Take a look through my <a href="#portfolio">portfolio</a> to see what I've been building, or
+          <a href="#contact">reach out</a> if you'd like to talk.</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h1 class="reveal">Portfolio</h1>
+      <div id="portfolio-filters"></div>
+      <div id="portfolio-grid"></div>
+    </section>
+
+    <section id="resume">
+      <h1 class="reveal">Resume</h1>
+      <ul>
+        <a href="resume/FleserConnorResume.pdf" download><li><p>Download</p></li></a>
+        <a href="resume/FleserConnorResume.pdf"><li><p>Print</p></li></a>
+      </ul>
+      <iframe src="resume/FleserConnorResume.pdf" title="Connor Fleser's resume"></iframe>
+      <p class="resume-fallback">If the preview above doesn't load, <a href="resume/FleserConnorResume.pdf">open the PDF directly</a>.</p>
+    </section>
+
+    <section id="contact">
+      <div id="contact-left" class="reveal">
+        <img src="images/portrait-contact.jpeg" id="contact-img" alt="Portrait of Connor Fleser">
+        <div id="media">
+          <h2>Social Media</h2>
+          <ul class="media">
+            <li class="media"><a href="https://www.linkedin.com/in/connor-fleser/"><img src="images/linkedin.svg" alt="Linkedin" class="media"></a></li>
+            <li class="media"><a href="https://github.com/Fleser11"><img src="images/github.svg" alt="Github" class="media"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="contact-right" class="reveal">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch with me, please feel free to reach out via:</p>
+        <ul>
+          <li>Email: <a href="mailto:cfleser11@gmail.com">cfleser11@gmail.com</a></li>
+          <li>Phone: (616) 843 1554</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <footer-component></footer-component>
+
+  <div id="portfolio-modal" class="portfolio-modal" hidden>
+    <div class="portfolio-modal-backdrop"></div>
+    <div class="portfolio-modal-panel">
+      <button class="portfolio-modal-close" aria-label="Close">&times;</button>
+      <div class="portfolio-modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      loadEntries();
+    });
+  </script>
+</body>
+
+</html>

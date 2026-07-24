@@ -1,0 +1,59 @@
+
+.hero {
+    width: 100vw;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(56, 29, 42, 0.55), rgba(56, 29, 42, 0.70)),
+        url("../images/aurora-banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.hero-content {
+    animation: fade-in-up 0.8s ease both;
+}
+
+.hero-content h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-tagline {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(240, 240, 240);
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+#home {
+    display: block;
+}
+
+h1 {
+    margin: 4% 0 0 0;
+}
+
+#home-text {
+    text-align: left;
+}
+
+#home-img {
+    float: right;
+    width: 35%;
+    margin: 0 0 15px 25px;
+}
+
+#home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 2vh;
+}
+

@@ -1,10 +1,11 @@
 {
     "title": "FRC - First Robotics",
-    "body": "<img src = 'entries/frc/FRCStates.jpg' style = 'float: left; width: 200px; margin: 0 10px 0 0'><p>In high school I began participating in First Robotics on team 3546, Buc'n'gears, as a way to learn more about coding as well as gain experience working with a team of individuals. This was an incredibly valuable experience as It gave me an opportunity to work with people from many different fields and was one of my first experiences working on a technical project with other individuals.</p><p>In my time with First Robotics I worked on the programming and electrical where I worked to develop the robot code in Java and wired the robot. In this time I learned a significant amount about methods and classes. It also taught me a significant amount about the value of team work and how to work on a team</p><p>By the time I graduated from the program I had also worked my way up to being the co-captain of our team, where I led the programming and electrical components of the robot.</p>",
-    "tags": ["Leadership", "Teamwork", "Java", "Wire Managment"],
+    "cover": "portfolio/entries/frc/teamPhoto.webp",
+    "body": "<img src='portfolio/entries/frc/teamPhoto.webp' style='float: left; width: 220px; margin: 0 15px 10px 0'><p>My first real experience building something technical alongside a team came in high school, competing in the FIRST Robotics Competition (FRC) with team 3546, the Buc'n'gears. Designing and building a competition robot on a tight timeline, shoulder-to-shoulder with people from all kinds of backgrounds, was what first got me hooked on collaborative technical work.</p><p>I worked on the programming and electrical side of the team, writing the robot's control code in Java and handling its wiring. It was where I first learned to think in terms of methods and classes, and where I came to appreciate how much a project depends on a team that communicates well and pulls in the same direction.</p><p>By the time I graduated I had worked my way up to co-captain, leading the programming and electrical efforts and mentoring newer members &mdash; an early version of the technical leadership I have continued to grow into ever since.</p>",
+    "tags": ["Leadership", "Software Engineering", "Teamwork", "Java", "Wire Management"],
     "links": [
         {
-            "label": "Team 3526 Website",
+            "label": "Team 3546 Website",
             "url": "http://www.bucngears.com/"
         },
         {

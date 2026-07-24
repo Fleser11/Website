@@ -1,0 +1,8 @@
+{
+    "title": "Phase 1 Engineering",
+    "body": "<p>As a Product Development and Research Intern at Phase 1 Engineering, I worked on two very different projects spanning simulation tooling and hardware prototyping.</p><p>For the Simulation Enhancement Tools project, I built an internal visualization tool in Python that extended the capabilities of the company's simulation software, enabling direct, parameterized comparison of design outputs. I also built a backend in C for the tool's I/O functions, achieving a 3x increase in processing speed and a noticeably better user experience.</p><p>Earlier, on the Reduced Cost Haptic Device project, I collaborated with senior engineers to reverse-engineer an existing market solution, then designed primitive amplifier circuitry that removed the need for a dedicated amplifier altogether, cutting the total device cost in half. I also prototyped solenoid alternatives using electromagnetic simulation and 3D printing.</p>",
+    "tags": ["Software Engineering", "Python", "C", "Simulation", "Circuit Design", "Embedded Systems"],
+    "links": [
+    ]
+
+}

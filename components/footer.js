@@ -5,7 +5,7 @@ footerTemplate.innerHTML = `
     <style>
     footer{
         display: flex;
-        background-color:rgb(34, 34, 34);
+        background-color: var(--color-plum, #381d2a);
         color:rgb(223, 223, 223);
         bottom:0;
         width:100vw;

@@ -1,0 +1,9 @@
+{
+    "title": "GE HealthCare",
+    "cover": "portfolio/entries/geHealthcare/ultrasoundTraining.jpeg",
+    "body": "<p>As an Edison Engineering Development Program (EEDP) intern at GE HealthCare, I've rotated through two teams building applied machine learning tools for medical imaging and clinical support.</p><p>On the STO Smart Devices team, I developed a latent diffusion model that jointly generates synthetic medical images and their corresponding segmentation masks, using cross-attention-based automatic mask generation and a BERT-based text encoder to condition generation on clinical descriptions. The model reached up to 0.89 accuracy on mask generation, with particularly strong results on lung segmentation, and the work is now being prepared for a paper disclosure submission.</p><p>On the CT Scanner Desktop team, I researched and implemented machine learning models for semantic embedding of customer support issues, identifying NLP models that achieved up to 0.65 recall for surfacing relevant topics in a document retrieval application. I also designed and built a responsive Angular application with OpenAPI-driven code generation, estimated to save around 3,000 developer-hours annually. I extended my internship through the fall to write functional and integration tests for the CT Scanner Desktop application, strengthening release reliability.</p>",
+    "tags": ["Software Engineering", "Data Science", "Machine Learning", "PyTorch", "NLP", "Angular", "Healthcare"],
+    "links": [
+    ]
+
+}

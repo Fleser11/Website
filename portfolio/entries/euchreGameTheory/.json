@@ -1,15 +1,16 @@
 {
-    "title": "Game Theory of Euchre",
-    "body": "<img src = 'entries/euchreGameTheory/relativeProbabilities.png' style = 'float: left; width: 200px; margin: 0 10px 0 0'><p>The study of strategic games is the study of strategic moves in decesion games to determine how players may act in order to maximize their payoffs. This is an economic model used to determine how players should interact with one another with clearly outlined rules.</p><img src='entries/euchreGameTheory/jackHand.png' style='float:right; width = 200px; height: 150px; margin: 0 0 0 10px'><img src='entries/euchreGameTheory/poorHand.png' style='float:right; width = 200px; height: 150px; margin: 0 0 0 0'><p>For this project, I undertook the task of modeling a particular part of the game of Euchre when playing \"Stick the Dealer\". The goal of the project was to determine if the dealer has an okay hand if they pick up the right bower, but a bad hand if they don't, whether or not they should do so.</p><p>To do this required analyzing both the ways in which hands can be dealt, their distributions, their effects on winning and the point return. Then doing this to find the rollback equilibrium and the ultimate decision the dealer should make.</p><p>This required statistical modelling, using some assumptions on distributions and the implications of those distributions, using these distributions, however, conditional distributions were able to be calculated and from here it was able to be determined what every players best move was.</p>",
-    "tags": ["Statistics", "Game Theory", "R", "SAS"],
+    "title": "Probabilistic Game Theory of Euchre",
+    "cover": "portfolio/entries/euchreGameTheory/relativeProbabilities.png",
+    "body": "<img src='portfolio/entries/euchreGameTheory/relativeProbabilities.png' style='float: left; width: 200px; margin: 0 10px 0 0'><p>This project applies game theory to a single, concrete decision in Euchre. Playing the \"Stick the Dealer\" variant &mdash; where the dealer is forced to call a suit if everyone else passes &mdash; the dealer is stuck with a weak hand of all 9s and a 10 while a Jack sits flipped face-up. Should they pick up that Jack, or pass and hope someone else calls first? I built a probabilistic model to find the mathematically optimal answer.</p><img src='portfolio/entries/euchreGameTheory/jackHand.png' style='float:right; width: 200px; height: 150px; margin: 0 0 0 10px'><img src='portfolio/entries/euchreGameTheory/poorHand.png' style='float:right; width: 200px; height: 150px; margin: 0 0 0 0'><p>With over 600 million ways to deal the cards, enumerating every case was impractical, so I modeled the game with probability distributions instead. I represented each player's hand strength with a Beta distribution and the tricks they would win with a conditional Beta-Binomial, then built payoff tables for every outcome. Working backward through the game's decision tree, I solved for the rollback equilibrium &mdash; the move each player makes assuming everyone else plays optimally.</p><p>The model's verdict: the dealer should pass. Picking up carries an expected payoff of &minus;0.766 against &minus;0.672 for passing &mdash; both negative, since a hand that weak is simply a losing position, but passing is the lesser of two evils. The analysis also highlighted how heavily each player's choice depends on information they don't have, since the opponents can never know how weak the dealer's hand truly is.</p><p>The project was an exercise in translating a messy, high-variance real-world problem into a tractable statistical model, and in using conditional distributions and expected-value reasoning to reach a defensible conclusion.</p>",
+    "tags": ["Data Science", "Statistics", "Game Theory", "R", "SAS"],
     "links": [
         {
             "label": "Paper",
-            "url": "entries/euchreGameTheory/GameTheoryFinalPaper.pdf"
+            "url": "portfolio/entries/euchreGameTheory/GameTheoryFinalPaper.pdf"
         },
         {
             "label": "R Code",
-            "url": "entries/euchreGameTheory/gameTheory.R"
+            "url": "portfolio/entries/euchreGameTheory/gameTheory.R"
         }
     ]
 

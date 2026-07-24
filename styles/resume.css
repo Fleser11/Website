@@ -1,0 +1,51 @@
+#resume {
+    flex-direction: column;
+}
+
+#resume iframe {
+    width: 70%;
+    height: 80vh;
+    margin: 3vh auto;
+    box-shadow: 0px 0px 20px 10px grey;
+    border: none;
+    display: block;
+}
+
+#resume .resume-fallback {
+    text-align: center;
+    margin: 0 0 3vh 0;
+    color: rgb(100, 100, 100);
+}
+
+#resume ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+#resume li {
+    background-color: var(--bar-color);
+    width: 12vw;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+#resume a {
+    margin: 0 2% 0 2%;
+    text-decoration: none;
+}
+
+#resume a li {
+    text-decoration: none;
+    color: white;
+}
+
+#resume a li:hover {
+    background-color: var(--color-rust);
+}
+
+#resume a li:active {
+    background-color: var(--color-orange);
+}

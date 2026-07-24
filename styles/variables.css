@@ -1,5 +1,18 @@
-
-
 :root {
-    --bar-color: rgb(37, 37, 37);
+    /* Brand palette */
+    --color-cream: #fcde9c;
+    --color-orange: #ffa552;
+    --color-rust: #ba5624;
+    --color-plum: #381d2a;
+    --color-sage: #c4d6b0;
+
+    /* Semantic roles */
+    --color-dark: var(--color-plum);
+    --color-primary: var(--color-rust);
+    --color-primary-hover: var(--color-orange);
+    --color-accent-light: var(--color-cream);
+    --color-accent-soft: var(--color-sage);
+    --text-color: var(--color-plum);
+
+    --bar-color: var(--color-plum);
 }

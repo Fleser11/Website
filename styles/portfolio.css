@@ -1,0 +1,239 @@
+#portfolio {
+    flex-direction: column;
+}
+
+#portfolio-filters {
+    margin: 10px 0 30px 0;
+}
+
+.filter-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.active-extra-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.filter-chip {
+    font: inherit;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-plum);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.filter-chip:hover {
+    background-color: var(--color-rust);
+    transform: translateY(-1px);
+}
+
+.filter-chip.active {
+    background-color: var(--color-rust);
+}
+
+.filter-chip.removable {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.remove-x {
+    font-weight: bold;
+}
+
+.filter-dropdown {
+    font: inherit;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--color-plum);
+    background-color: white;
+    color: var(--color-plum);
+    cursor: pointer;
+}
+
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+    #portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.portfolio-card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    font: inherit;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    animation: fade-in-up 0.5s ease both;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-card-media {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-card-media {
+    transform: scale(1.05);
+}
+
+.portfolio-card-placeholder {
+    background-image: linear-gradient(135deg, var(--color-rust) 0%, var(--color-plum) 100%);
+}
+
+.portfolio-card-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 16px 14px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to top, rgba(56, 29, 42, 0.9) 0%, rgba(56, 29, 42, 0) 100%);
+}
+
+.portfolio-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.portfolio-modal.open {
+    opacity: 1;
+}
+
+.portfolio-modal[hidden] {
+    display: none;
+}
+
+.portfolio-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-modal-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    max-width: 700px;
+    width: 90vw;
+    max-height: 85vh;
+    border-radius: 10px;
+    padding: 40px 4% 3% 4%;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    transform: scale(0.96);
+    transition: transform 0.2s ease;
+}
+
+.portfolio-modal.open .portfolio-modal-panel {
+    transform: scale(1);
+}
+
+.portfolio-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    z-index: 2;
+    font-size: 28px;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-plum);
+    transition: color 0.15s ease;
+}
+
+.portfolio-modal-close:hover {
+    color: var(--color-rust);
+}
+
+.portfolio-modal-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.portfolio-body img {
+    max-width: 100%;
+}
+
+.tag-list,
+.link-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+.tag-list li,
+.link-list li {
+    padding: 2px 10px;
+    margin: 2px 5px 2px 0;
+    border-radius: 20px;
+    background-color: var(--color-plum);
+    color: white;
+}
+
+.link-list li {
+    background-color: var(--color-rust);
+}
+
+.link-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.no-links {
+    color: rgb(100, 100, 100);
+}

@@ -1,32 +1,28 @@
 {
     "entries": [
         {
+            "title": "GE HealthCare",
+            "path": "entries/geHealthcare"
+        },
+        {
             "title": "IGS - Innovative Global Solutions",
             "path": "entries/igs"
         },
         {
-            "title": "Formal Modeling Research",
+            "title": "Rules as Code Research",
             "path": "entries/FMResearch"
         },
         {
-            "title": "Website",
-            "path": "entries/website"
+            "title": "Phase 1 Engineering",
+            "path": "entries/phase1Engineering"
         },
         {
-            "title": "Closet-Dex",
-            "path": "entries/closetdex"
+            "title": "Mass Spectrometry Bacterial Classification",
+            "path": "entries/massSpecML"
         },
         {
-            "title": "Probablistic Game Theory of Euchre",
+            "title": "Probabilistic Game Theory of Euchre",
             "path": "entries/euchreGameTheory"
-        },
-        {
-            "title": "Handwriting Study",
-            "path": "entries/handwriting"
-        },
-        {
-            "title": "DFT Implementation",
-            "path": "entries/dftImplementation"
         },
         {
             "title": "FRC - First Robotics",
