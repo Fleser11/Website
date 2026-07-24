@@ -23,7 +23,6 @@ async function loadEntries() {
         };
     }));
 
-    renderFeatured();
     renderFilters();
     renderGrid();
     setupModal();
@@ -124,6 +123,7 @@ function cardMarkup(entry) {
         ? `<div class="portfolio-card-media" style="background-image:url('${entry.cover}')"></div>`
         : `<div class="portfolio-card-media portfolio-card-placeholder"></div>`;
     return media
+        + (entry.featured ? `<span class="portfolio-card-badge">Featured</span>` : "")
         + `<span class="portfolio-card-title">${escapeHtml(entry.title)}</span>`
         + `<div class="portfolio-card-overlay">`
         + `<span class="portfolio-card-overlay-title">${escapeHtml(entry.title)}</span>`
@@ -143,36 +143,15 @@ function makeCard(entry, i) {
     return card;
 }
 
-function renderFeatured() {
-    const container = document.getElementById("portfolio-featured");
-    if (!container) return;
-    container.innerHTML = "";
-
-    const featuredEntries = allEntries.filter(entry => entry.featured);
-    if (!featuredEntries.length) return;
-
-    const heading = document.createElement("h3");
-    heading.className = "portfolio-featured-heading";
-    heading.textContent = "Featured";
-    container.appendChild(heading);
-
-    const row = document.createElement("div");
-    row.className = "portfolio-featured-row";
-    featuredEntries.forEach((entry, i) => {
-        const card = makeCard(entry, i);
-        card.classList.add("portfolio-card-featured");
-        row.appendChild(card);
-    });
-    container.appendChild(row);
-}
-
 function renderGrid() {
     const grid = document.getElementById("portfolio-grid");
     grid.innerHTML = "";
 
-    const visibleEntries = activeTags.size === 0
+    const visibleEntries = (activeTags.size === 0
         ? allEntries
-        : allEntries.filter(entry => entry.tags.some(tag => activeTags.has(tag)));
+        : allEntries.filter(entry => entry.tags.some(tag => activeTags.has(tag))))
+        .slice()
+        .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
     visibleEntries.forEach((entry, i) => {
         grid.appendChild(makeCard(entry, i));

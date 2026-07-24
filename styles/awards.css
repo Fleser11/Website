@@ -27,6 +27,12 @@
 .award-title {
     font-weight: bold;
     color: var(--color-primary, #ba5624);
+    text-decoration: none;
+    width: fit-content;
+}
+
+a.award-title:hover {
+    text-decoration: underline;
 }
 
 .award-context {

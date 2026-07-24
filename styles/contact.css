@@ -11,6 +11,11 @@
     width: 40%;
 }
 
+#contact-info h2,
+#contact-social h2 {
+    text-align: center;
+}
+
 .contact-list {
     list-style: disc outside;
     padding-left: 20px;
@@ -28,6 +33,7 @@
     margin: 10px 0 0 0;
     display: flex;
     gap: 18px;
+    justify-content: center;
 }
 
 #contact-social ul.media li {
