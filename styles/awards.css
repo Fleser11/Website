@@ -24,15 +24,35 @@
     box-shadow: var(--shadow-card, 0 2px 10px rgba(56, 29, 42, 0.10));
 }
 
-.award-title {
-    font-weight: bold;
-    color: var(--color-primary, #ba5624);
-    text-decoration: none;
+.award-title-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     width: fit-content;
 }
 
-a.award-title:hover {
-    text-decoration: underline;
+.award-title {
+    font-weight: bold;
+    color: var(--color-primary, #ba5624);
+}
+
+.award-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--text-on-dark, white);
+    background-color: var(--color-primary, #ba5624);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.award-link-icon:hover {
+    background-color: var(--color-primary-hover, #ffa552);
 }
 
 .award-context {
